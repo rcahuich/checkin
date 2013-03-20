@@ -1,26 +1,19 @@
 
-<div class="row demo-row">
-  <h3 class="demo-panel-title">Check In JWM</h3>
-<div class="navbar navbar-inverse">
-            <div class="navbar-inner">
-   <div class="nav-collapse collapse demo-panel-title-right">
-                  <ul class="nav">
-                    <li class="active">
-                      <a href="#">
-                        nombre user
-                        <span class="navbar-unread">1</span>
-                      </a>
-                      <ul>
-                        <li><a href="#">Element One</a></li>
-                        <li><a href="#">Element Three</a></li>
-                      </ul> <!-- /Sub menu -->
-                    </li>
-                  </ul>
-                </div><!--/.nav-collapse -->
-                </div>
-                </div>
 
-  <h4 class="demo-panel-title-right"> <a href="#" class="btn">Salir</a></h4>
+
+<div class="row">
+  <div class="span8">
+    <h3 class="demo-panel-title">Check In JWM</h3>
+  </div>
+  <div class="span3">
+    <h4 class="demo-panel-title"><a href="#" class="btn btn-large btn-block btn-inverse">ruben.cahuich</a></h4>
+  </div>
+  <div class="span1">
+    <h4 class="demo-panel-title"><a href="#" class="btn btn-large btn-block btn-inverse">Salir</a></h4>
+  </div>
+</div>
+
+<div class="row">
 <div class="span9">
           <div class="navbar navbar-inverse">
             <div class="navbar-inner">
@@ -67,6 +60,10 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="span3">
+          <a href="#" class="btn btn-large btn-block btn-primary"><span class="fui-location-16"></span> Default Button</a>
         </div>
 
         </div>
