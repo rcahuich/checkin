@@ -7,32 +7,29 @@
     <title>Mi Perfil</title>
   </head>
   <body>
-    <h1>Sample line</h1>
+    <h1>${user.username}</h1>
     
     <div class="row">
         <div class="span9">
           <div class="demo-browser">
-            <div class="demo-browser-side">
-              <div class="demo-browser-author">sadsadsad</div>
-              <div class="demo-browser-action">
-                <a class="btn btn-danger btn-large btn-block" href="http://twitter.com/monstercritic" target="_blank">
-                  Follow
-                </a>
-              </div>
-              <h5>monstercritic</h5>
-              <h6>
-                Tourist. Designer. NYC
-                <a href="http://shmidt.in" target="_blank">shmidt.in</a>
-              </h6>
-            </div>
-            <div class="demo-browser-content">
-              <img src="images/demo/browser-pic-1.jpg" alt="" />
-              <img src="images/demo/browser-pic-2.jpg" alt="" />
-              <img src="images/demo/browser-pic-3.jpg" alt="" />
-              <img src="images/demo/browser-pic-4.jpg" alt="" />
-              <img src="images/demo/browser-pic-5.jpg" alt="" />
-              <img src="images/demo/browser-pic-6.jpg" alt="" />
-            </div>
+              <table class="table table-condensed">
+                      <thead>
+                              <tr>
+                                  <g:sortableColumn property="nombre" title="${message(code: '#')}" />
+                                  <g:sortableColumn property="nombre" title="${message(code: 'username')}" />
+                                  <g:sortableColumn property="tipoEvento" title="${message(code: 'opciones')}" />
+                              </tr>
+                      </thead>
+                      <tbody>
+                      <g:each in="${users}" status="i" var="user">
+                              <tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+                                  <td>${++i}</td>
+                                  <td>${fieldValue(bean: user, field: "username")}</td>
+                                  <td><a href="#" class="btn"> Modificar</a></td>
+                              </tr>
+                      </g:each>
+                      </tbody>
+              </table>
           </div>
         </div>
 
@@ -41,10 +38,12 @@
             <img src="images/demo/html-icon.png" src="Free PSD" />
           </div>
 
-          <a href="https://github.com/designmodo/Flat-UI/archive/master.zip" class="btn btn-primary btn-large btn-block">Download</a>
+          <a href="https://github.com/designmodo/Flat-UI/archive/master.zip" class="btn btn-info btn-large btn-block"> <span class="fui-plus-16"></span> Seguir</a>
 
           <p class="demo-download-text">Your likes, shares and comments make us happy!</p>
         </div>
       </div> <!-- /download area -->
+
+
   </body>
 </html>

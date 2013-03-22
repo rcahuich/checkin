@@ -3,7 +3,7 @@
     <h3 class="demo-panel-title"><a href="${createLink(uri: '/')}">Check In JWM</a></h3>
   </div>
   <div class="span3">
-    <h4 class="demo-panel-title"><a href="#" class="btn btn-large btn-block btn-inverse"><sec:loggedInUserInfo field="username"/></a></h4>
+    <h4 class="demo-panel-title"><a href="${createLink(controller: 'user')}" class="btn btn-large btn-block btn-inverse"><sec:loggedInUserInfo field="username"/></a></h4>
   </div>
   <div class="span1">
     <h4 class="demo-panel-title"><a href="${createLink(controller:'logout', action:'index')}" class="btn btn-large btn-block btn-inverse">salir</a></h4>
