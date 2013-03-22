@@ -17,9 +17,9 @@
 		<g:layoutHead/>
 		<r:layoutResources />
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-	    <!--[if lt IE 9]>
-	      <g:javascript src="flat-ui/html5shiv.js" />
-	    <![endif]-->
+                <!--[if lt IE 9]>
+                  <g:javascript src="flat-ui/html5shiv.js" />
+                <![endif]-->
 
 	</head>
 	<body>
@@ -32,9 +32,9 @@
 		<g:javascript library="application"/>
 		<g:javascript library="flatui"/>
 		<!--[if lt IE 8]>
-	      <g:javascript src="flat-ui/icon-font-ie7.js" />
-	      <g:javascript src="flat-ui/lte-ie7-24.js" />
-	    <![endif]-->
+                  <g:javascript src="flat-ui/icon-font-ie7.js" />
+                  <g:javascript src="flat-ui/lte-ie7-24.js" />
+                <![endif]-->
 		<r:layoutResources />
 	</body>
 </html>

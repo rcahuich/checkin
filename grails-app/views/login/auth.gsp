@@ -1,25 +1,29 @@
 <html>
 <head>
-	<meta name='layout' content='login'/>
-	<title><g:message code="springSecurity.login.title"/></title>
-	
+  <meta name='layout' content='login'/>
+  <title><g:message code="springSecurity.login.title"/></title>
+  
 </head>
 
 <body>
 
 
-	<div class="login">
+  <div class="login">
         <div class="login-screen">
+
+       	  <g:if test='${flash.message}'>
+       	  		<div class="alert alert-error">
+				  <strong></strong> ${flash.message}
+				</div>
+		  </g:if>
+
           <div class="login-icon">
-          	<img src="${resource(dir: 'images', file: 'flat-ui/login/icon.png')}" alt="Bienvenido a Check-In JWM" />
-            <h4>Bienvenido a <small>Check-In JWM</small></h4>
+            <img src="${resource(dir: 'images', file: 'flat-ui/illustrations/compass.png')}" alt="Bienvenido a Check-In JWM" />
+            <h4><small>Check-In JWM</small></h4>
           </div>
 
           <form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
           <div class="login-form">
-          	<g:if test='${flash.message}'>
-				<div class='login_message'>${flash.message}</div>
-			</g:if>
             <div class="control-group">
               <input type="text" class="login-field" value="" placeholder="Introduce tu usuario" name='j_username' id="login-name" />
               <label class="login-field-icon fui-man-16" for="login-name"></label>
@@ -39,11 +43,11 @@
       </div>
 
 <script type='text/javascript'>
-	<!--
-	(function() {
-		document.forms['loginForm'].elements['j_username'].focus();
-	})();
-	// -->
+  <!--
+  (function() {
+    document.forms['loginForm'].elements['j_username'].focus();
+  })();
+  // -->
 </script>
 </body>
 </html>

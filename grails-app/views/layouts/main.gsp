@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><g:layoutTitle default="Grails"/></title>
+		<title><g:layoutTitle default="Grails"/> - JWM</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -28,8 +28,6 @@
 
 			<g:layoutBody/>
 		</div>
-		
-		<g:render template="/layouts/footer" />
 		
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 		<g:javascript library="application"/>

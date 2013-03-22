@@ -42,7 +42,7 @@ class LoginController {
 	def auth = {
 
 		def config = SpringSecurityUtils.securityConfig
-
+		log.debug "DECIDE DONDE ENTRAR"
 		if (springSecurityService.isLoggedIn()) {
 			redirect uri: config.successHandler.defaultTargetUrl
 			return

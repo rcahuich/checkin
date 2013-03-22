@@ -2,11 +2,11 @@ package com.jwm.checkin
 
 import grails.plugins.springsecurity.Secured
 
-@Secured(['ROLE_USER'])
+@Secured(['ROLE_ADMIN'])
 class HomeController {
 
     def index() {
-		redirect view:'index'
+		log.debug "Home"
 	}
 
 }
